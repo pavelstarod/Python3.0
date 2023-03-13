@@ -8,7 +8,7 @@
 
 S = int(input('Введите сумму чисел: '))
 P = int(input('Введите произведение чисел: '))
-for i in range(S+1):
-    for j in range(P+1):
+for i in range(S):
+    for j in range(P):
         if i+j == S and i*j == P:
             print(i, end=' ')
