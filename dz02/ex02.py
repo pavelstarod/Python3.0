@@ -6,4 +6,9 @@
 # 4 4 -> 2 2
 # 5 6 -> 2 3
 
-X=int(input())
+S = int(input('Введите сумму чисел: '))
+P = int(input('Введите произведение чисел: '))
+for i in range(S+1):
+    for j in range(P+1):
+        if i+j == S and i*j == P:
+            print(i, end=' ')
