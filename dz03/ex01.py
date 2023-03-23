@@ -8,7 +8,6 @@
 # -> 1
 
 N = int(input('Введите количество элементов в массиве N: '))
-
 A = []
 for _ in range(N):
     A.append(int(input('Введите Ai: ')))
