@@ -23,9 +23,18 @@
 # Вывод:
 # 12
 
-# подскака
-# my_list=[2,4,6,77,8,99]
-my_list={2:4,
-         6:77,
-         8:99}
-print(8 in my_list)
+scrab_dict = {'[AEIOULNSTRАВЕИНОРСТ]': 1,
+              '[DGДКЛМПУ]': 2,
+              '[BCMPБГЁЬЯ]': 3,
+              '[FHVWYЙЫ]': 4,
+              '[KЖЗХЦЧ]': 5,
+              '[JXШЭЮ]': 8,
+              '[QZФЩЪ]': 10}
+
+word = input('Введите слово: ').upper()
+result = 0
+for key, val in scrab_dict.items():
+    for i in word:
+        if i in key:
+            result += val
+print(f'Сумма очков равна: {result}.')
