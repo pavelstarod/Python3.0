@@ -7,3 +7,12 @@
 # 1 2 3 4 5
 # 6
 # -> 5
+
+N = int(input('Введите N: '))
+A = list(map(int, input().split()[:N]))
+X = int(input('Введите X: '))
+result = 0
+for i in range(len(A)):
+    if X-A[i] < X-result and X-A[i] > 0:
+        result = A[i]
+print(result)
